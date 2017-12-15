@@ -1,0 +1,76 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #424242;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+hr {
+  background-color: #7d97ad;
+  height: 4px;
+}
+
+@media screen and (max-width: 991px) {
+  .txt-center {
+    text-align: center;
+  }
+  .center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .height-reduce-main {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .height-enlarge-main {
+    height: 800px;
+  }
+}
+
+.logo {
+  height: 140px;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.main-content {
+	width: 100%;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/38/1a/f0/381af04376d3d51b24f9f79591b4acc1.jpg");
+	background-size: cover;
+	max-width: 100%;
+}
+
+.project1-link {
+	font-weight: 100;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.link-center {
+  display: block;
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
