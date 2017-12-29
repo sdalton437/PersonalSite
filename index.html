@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Samuel Dalton Web Developer</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -58,36 +61,138 @@
           about section
         </div>
       </div>
-
-
-
+      <p>
+      <div class="row text-center">
+        <div class="col-md-12">
+          Personal Projects
+        </div>
+      </div>
 
       <div class="row">
-        <div class="col-md-4">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Python</button>
-              <ul class="dropdown-content">
-                <li><a href="#">Catalog Items App</a></li>
-              </ul>
+        <div class="col-md-4 text-center">
+          <div>
+            <button class="btn python" type="button" data-toggle="collapse" data-target="#collapsePython">
+            </button>
+          </div>
+
+          <div class="collapse mt-3 text-center" style="width:260px; margin:0 auto;" id="collapsePython">
+            <div class="card">
+              <div class="card-header bg-white">
+                <h4 class="mb-0">
+                  <a data-toggle="modal" href="#collapsePython1">
+                  Items Catalogue Project</a>
+                </h4>
+                <div id="collapsePython1" class="modal" role="dialog">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header text-center">
+                    <h4  class="modal-title" style="margin: 0 auto;"> Items Catalog Project</h4>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>Created a catalog item application that allows users to create, read, update and delete data. This was developed using the Python framework Flask and SQL alchemy to interact with data. Some highlights of this project include:
+                    <ul>
+                      <li>Web application uses a Google sign-in to allow users to create, edit or delete items. Only users who created an item can edit or delete it</li>
+                      <li>Personally created database. I created the database for this project myself using a database_setup.py file that creates various tables and another .py file populates these tables.</li>
+                    </ul>
+                    You can view this project on my GitHub <a href="https://github.com/sdalton437/mocCatalogue"> here. </a>
+                    <br> You can also view this project on a server I configured using Amazon Web Services <a href="http://ec2-18-217-114-163.us-east-2.compute.amazonaws.com">here.</a>
+
+                  </div>
+                  <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Javascript</button>
-              <ul class="dropdown-menu">
-                <li><a href="#">Places to Visit in Montreal</a></li>
-              </ul>
+
+        <div class="col-md-4 text-center">
+          <div>
+            <button class="btn js" type="button" data-toggle="collapse" data-target="#collapseJS">
+            </button>
+          </div>
+
+          <div class="collapse mt-3 text-center" style="width:260px; margin:0 auto;" id="collapseJS">
+            <div class="card">
+              <div class="card-header bg-white">
+                <h4 class="mb-0">
+                  <a data-toggle="modal" href="#collapseJS1">
+                  Neighbourhood Map</a>
+                </h4>
+                <div id="collapseJS1" class="modal" role="dialog">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header text-center">
+                    <h4  class="modal-title" style="margin: 0 auto;"> Neighbourhood Map</h4>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>
+                      This program is an interactive map of some interesting places in Montreal that
+                      users can filter through, and get data on such as opening times and images. It uses
+                      the <strong>Bootstrap</strong> js framework to load data asynchronously, the
+                      <strong>Google Maps API</strong> for the map and various functions to interact
+                      with the map, and the <strong>Foursquare API</strong> to fetch data from the locations.
+                  </p>
+                  You can view this project on my GitHub <a href="https://github.com/sdalton437/MontrealNeighborhoodMap"> here. </a>
+
+                  </div>
+                  <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SQL</button>
-              <ul class="dropdown-menu">
-                <li><a href="#">News Database</a></li>
-                <li><a href="#">Catalog Items</a></li>
-              </ul>
+
+        <div class="col-md-4 text-center">
+          <div>
+            <button class="btn sql" type="button" data-toggle="collapse" data-target="#collapseSQL">
+            </button>
+          </div>
+
+          <div class="collapse mt-3 text-center" style="width:260px; margin:0 auto;" id="collapseSQL">
+            <div class="card">
+              <div class="card-header bg-white">
+                <h4 class="mb-0">
+                  <a data-toggle="modal" href="#collapseSQL1">
+                  Newspaper Database</a>
+                </h4>
+                <div id="collapseSQL1" class="modal" role="dialog">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header text-center">
+                    <h4  class="modal-title" style="margin: 0 auto;"> Newspaper Database</h4>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>Created an internal reporting tool for a fictional newspaper site. This program uses SQL queries to connect to a database and analyze data, and prints out information about the database including:
+                    <ul>
+                      <li>The three most popular articles of all time</li>
+                      <li>The most popular article authors of all time</li>
+                      <li>On which days more than 1% of requests lead to errors</li>
+                    </ul>
+                    You can view this project on my GitHub <a href="https://github.com/sdalton437/logdb"> here</a>
+                  </p>
+                  </div>
+                  <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+    </div>
+
+
+
     </main>
 
     <footer>
@@ -104,3 +209,4 @@
     </footer>
   </div>
 </body>
+<script src="js/script.js"></script>
